@@ -1,4 +1,4 @@
-# Processing Bluetooth data for traffic related applications
+# Processing Bluetooth data for deriving route choices of truck drivers
 
 ToGRIP-Bluetooth service provides the Bluetooth data collected by the port of Rotterdam. When queried, the service returns data in a json format. The real MAC address is converted to an 11 digit vehicle ID using hashing thus the privacy is retained at the user level. The Bluetooth sensor records the time stamp and the strength of the vehicle identification for every MAC address associated with a passing vehicle. The travel time between two Bluetooth sensors can be estimated from the time stamps of the corresponding MAC address. Bluetooth data retrieved from ToGRIP-Bluetooth service are coded with UTC time zone; therefore, it is necessary to convert UTC time to CET/CEST depending on the time of the year. 
 
